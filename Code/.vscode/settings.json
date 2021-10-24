@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "*.s": "c",
+        "tasks.h": "c",
+        "lists.h": "c",
+        "linos.h": "c",
+        "port.h": "c",
+        "event.h": "c",
+        "stdint.h": "c",
+        "bitmap.h": "c",
+        "sem.h": "c",
+        "mailbox.h": "c",
+        "linosconfig.h": "c"
+    }
+}
