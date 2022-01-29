@@ -8,7 +8,6 @@
 #include "LinOS.h"
 #include "EventGroup.h"
 
-
 /**
  * @Author: YangSL
  * @Description: 初始化事件标志组
@@ -19,7 +18,6 @@ void vEventGroupInit(tEventGroup * eventGroup,  uint32_t flags)
 
     eventGroup->flags = flags;
 }
-
 
 static uint32_t uEventGroupCheckAndConsume(tEventGroup * eventGroup, uint32_t type, uint32_t * flags)
 {
