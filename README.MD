@@ -39,7 +39,7 @@ LinRTOS开发基于MDK平台，目前工程工程自动适配Cortex M0/M3/M4
 
 虽然目前只实现了内核层部分，想要这个系统更加的完善，还需要添加部分必要的组件和安全的框架进去，这里先给自己埋一个坑吧，后面有机会在来进行进一步的完善。
 
-![整体框架](Image/整体框架.png)
+![整体框架](./Image/整体框架.png)
 
 ## LinRTOS Kernel
 ### 工程文件结构
@@ -55,6 +55,6 @@ LinRTOS开发基于MDK平台，目前工程工程自动适配Cortex M0/M3/M4
     │  └─User               // 用户目录
 
 ### Kernel框架
-![Kelnel框架](Image/LinRTOS_Kernel.png)
+![Kelnel框架](./Image/LinRTOS_Kernel.png)
 
 对RTOS来说，任务调度是最核心的东西，这里面涉及到优先级调度算法，调度逻辑，及系统运行在硬件平台的一些基础知识点。
