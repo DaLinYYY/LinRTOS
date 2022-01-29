@@ -2,6 +2,7 @@
 本项目为2021年自己从零到一写出来的简易RTOS系统，目的是为了能更加深入的学习RTOS系统及底层运行的逻辑，项目命名为"LinRTOS",为什么会取这个名字呢？因为我叫Dalin，哈哈哈。
 
 LinRTOS开发基于MDK平台，目前工程工程自动适配Cortex M0/M3/M4
+
 ---
 ## 参考说明
 写该系统主要参考的有两个知名的RTOS框架：为[FreeRTOS](https://freertos.org/RTOS.html)和[RT-Thread](https://www.rt-thread.org/document/site/#/rt-thread-version/rt-thread-standard/README)，FreeRTOS从远源码角度进行学习的，RT-Thread从Api的命名及系统框架结构上进行了一定借鉴。
