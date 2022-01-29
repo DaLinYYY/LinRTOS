@@ -2,13 +2,13 @@
 本项目为2021年自己从零到一写出来的简易RTOS系统，目的是为了能更加深入的学习RTOS系统及底层运行的逻辑，项目命名为"LinRTOS",为什么会取这个名字呢？因为我叫Dalin，哈哈哈。
 
 LinRTOS开发基于MDK平台，目前工程工程自动适配Cortex M0/M3/M4
-
+---
 ## 参考说明
 写该系统主要参考的有两个知名的RTOS框架：为[FreeRTOS](https://freertos.org/RTOS.html)和[RT-Thread](https://www.rt-thread.org/document/site/#/rt-thread-version/rt-thread-standard/README)，FreeRTOS从远源码角度进行学习的，RT-Thread从Api的命名及系统框架结构上进行了一定借鉴。
 
 这里想对国内的RT-Thread做定义说明，都知道老牌FreeRTOS是免费商业使用，其实RT-Thread也是可免费商业使用，只是RT-Thread有扩展的增值服务才需要进行收费：
 - github master代码仓上你能看到的都是开源、免费的，可以免费商用
-
+---
 ## LinRTOS命名
 函数命名规则主要参照FreeRTOS:
 
@@ -33,7 +33,7 @@ LinRTOS开发基于MDK平台，目前工程工程自动适配Cortex M0/M3/M4
 - vTaskPrioritySet()函数的返回值为 void 型，在 task.c这个文件中定义。
 - xQueueReceive()函数的返回值为 portBASE_TYPE 型，在 queue.c 这个文件中定义。
 - vSemaphoreCreateBinary()函数的返回值为 void 型，在 semphr.h 这个文件中定义。
-
+---
 ## LinRTOS系统框架
 这里称系统架构其实也不是很合理的，因为LinRTOS只提供了在ARM的架构之上的内核层面的任务调度和消息处理和对硬件进行一定的抽象，内核层上面的组件框架和在上层的业务逻辑层是没有涉及到。
 
@@ -68,7 +68,7 @@ Event：事假核心文件，提供给各种类型的消息，信号公用的模
 - EventGroup: 事件标志组，用了多任务之间的同步，和信号量不同的是，可以实现一对多，多对多的同步。 即一个任务可以等待多个事件的发生：可以是任意一个事件发生时唤醒任务进行事件处理；也可以是几个事件都发生后才唤醒任务进行事件处理。同样，也可以是多个任务同步多个事件。
 - Mailbox: 邮箱通讯，同于任务间数据信息传输，提供增删改查功能。
 
-
+---
 
 **任务调度的一些问题：**
 
